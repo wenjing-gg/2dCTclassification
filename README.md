@@ -10,6 +10,7 @@
 
 假设数据集存放在路径 `/home/yuwenjing/data/sm_6/` 下，数据集的目录结构大致如下：
 /home/yuwenjing/data/sm_6/
+/home/yuwenjing/data/sm_6/
 ├── test/                # 测试集数据
 │   ├── 0/              # 类别 0 的测试样本
 │   │   ├── 1_2_slice133.png
@@ -34,8 +35,14 @@
 │   │   ├── 1_5_slice135.png
 │   │   └── ...         # 更多的样本切片
 │   └── ...             # 其他类别的训练数据
+├── VIT/                 # VIT 模型相关文件
+│   ├── weights/         # 模型权重
+│   │   ├── best_model.pth
+│   │   ├── best_model_auc.pth
+│   │   └── ...
+│   └── vit_base_patch16_224_in21k.pth
+└── README.md            # 项目的说明文件
 
-/home/yuwenjing/data/sm_6/ ├── test/ # 测试集数据 │ ├── 0/ # 类别 0 的测试样本 │ │ ├── 1_2_slice133.png │ │ ├── 1_2_slice134.png │ │ ├── 1_2_slice135.png │ │ └── ... # 更多的样本切片 │ ├── 1/ # 类别 1 的测试样本 │ │ ├── 1_3_slice133.png │ │ ├── 1_3_slice134.png │ │ ├── 1_3_slice135.png │ │ └── ... # 更多的样本切片 │ └── ... # 其他类别的测试数据 ├── train/ # 训练集数据 │ ├── 0/ # 类别 0 的训练样本 │ │ ├── 1_4_slice133.png │ │ ├── 1_4_slice134.png │ │ ├── 1_4_slice135.png │ │ └── ... # 更多的样本切片 │ ├── 1/ # 类别 1 的训练样本 │ │ ├── 1_5_slice133.png │ │ ├── 1_5_slice134.png │ │ ├── 1_5_slice135.png │ │ └── ... # 更多的样本切片 │ └── ... # 其他类别的训练数据
 
 
 ## 处理数据
